@@ -48,7 +48,22 @@
             //}
             //return countS.Count == countT.Count && !countS.Except(countT).Any();
         }
-    }
+        public int[] TwoSum(int[] nums, int target)
+        {
+            Dictionary<int, int> prevMap = new Dictionary<int, int>();
 
+            for (int i = 0; i < nums.Length; i++)
+            {
+                var y = target - nums[i];
+                if (prevMap.ContainsKey(y))
+                {
+                    return new int[] { prevMap[y], i };
+                }
+                prevMap[nums[i]] = i;
+            }
+            return new int[0];
+
+        }
+    }
 }
 
