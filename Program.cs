@@ -15,7 +15,10 @@ namespace Coding_Practice
             int[] nums = { 2, 11, 11, 7 };
             int[] result = solution.TwoSum(nums, 9);
             Console.WriteLine("\n[" + string.Join(",", result) + "]");
-            
+
+            string[] strs = { "act", "pots", "tops", "cat", "stop", "hat" };
+            Array.Sort(strs);
+            Console.WriteLine(string.Join(", ", strs));
         }
     }
 
