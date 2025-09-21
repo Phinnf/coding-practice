@@ -105,6 +105,20 @@
             }
             return res;
         }
+        public bool IsValidSudoku(char[][] board)
+        {
+            for (int row = 0; row < 9; row++)
+            {
+                HashSet<char> seen = new HashSet<char>();
+                for (int i = 0; i < 9; i++)
+                {
+                    if (board[row][i] == '.') continue;
+                    if (seen.Contains(board[row][i])) return false;
+                    seen.Add(board[row][i]);
+                }
+            }
+            return true;
+        }
     }
 }
 
