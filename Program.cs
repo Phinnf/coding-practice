@@ -6,7 +6,7 @@ namespace Coding_Practice
     {
         static void Main(string[] args)
         {
-            Solution solution = new Solution();
+            Array_Hashing solution = new();
 
             string s = "car";
             string t = "arc";

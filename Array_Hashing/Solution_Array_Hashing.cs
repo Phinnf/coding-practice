@@ -1,6 +1,6 @@
 ﻿namespace Coding_Practice
 {
-    public class Solution
+    public class Array_Hashing
     {
         public bool HasDuplicate(int[] nums)
         {
@@ -119,6 +119,7 @@
             }
             return true;
         }
+
     }
 }
 
